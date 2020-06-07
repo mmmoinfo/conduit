@@ -55,10 +55,7 @@ text-transform:uppercase;
 img{
 border-radius:50%;
 transition:all 0.5s ease-in-out;
-border:1px;
-border-color:red;
 }
-
 
 img:hover { 
 transform: rotate (360deg);
@@ -67,20 +64,9 @@ transform: rotate (360deg);
 
 .hearts {
   border: 20px solid pink;
-  border-image-source: url(media/rotate/conduitborder2.jpg);
+  border-image-source: "media/rotate/conduitborder2.jpg";
   border-image-slice: 20 22;
   border-image-repeat: round;
-}
-/* styling for Pen, unrelated to border-image */
-
-* {
-  box-sizing: border-box;
-}
-
-div {
-  width: 40vw;
-  height: 40vh;
-  margin: 4em auto;
 }
 
 a:active {
