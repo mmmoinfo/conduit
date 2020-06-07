@@ -38,8 +38,6 @@ a:link {
           color: black;
             text-decoration: underline;
 
-
-
 }
 a:visited {
      text-decoration: none;
@@ -67,12 +65,23 @@ transform: rotate (360deg);
 }
 
 
-#borderimg1 { 
-  border: 10px solid transparent;
-  padding: 15px;
-  border-image: url(media/rotate/border.png) 30 round;
+.hearts {
+  border: 20px solid pink;
+  border-image-source: url(media/rotate/conduitborder2.jpg);
+  border-image-slice: 20 22;
+  border-image-repeat: round;
+}
+/* styling for Pen, unrelated to border-image */
+
+* {
+  box-sizing: border-box;
 }
 
+div {
+  width: 40vw;
+  height: 40vh;
+  margin: 4em auto;
+}
 
 a:active {
      text-decoration: none;
@@ -135,7 +144,7 @@ table, th, td {
 → <a href="conduitres.html"><em>r</em>esidency</a><br>
 </div><br><br>
 
-<p id="borderimage1.jpg">
+<p id="hearts">
 <div align="right"><img width="400" src="media/rotate/rotate1.jpg"></div><br>
 </p>
 
