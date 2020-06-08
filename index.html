@@ -20,28 +20,21 @@
 </script>
 
 <script type="text/javascript">
-    if (document.getElementById) { window.onload = swap };
-function swap() {
-var numimages=2;
-rndimg = new Array("media/rotate/rotate1.jpg"), "media/rotate/rotate1.jpg"
-    , "media/rotate/rotate2.jpg"
-    , "media/rotate/rotate3.jpg"
-    , "media/rotate/rotate4.jpg"
-    , "media/rotate/rotate5.jpg"
-    , "media/rotate/rotate6.jpg"
-    , "media/rotate/rotate7.jpg"
-    , "media/rotate/rotate8.jpg"
-    , "media/rotate/rotate9.jpg"
-    , "media/rotate/rotate10.jpg"
-    , "media/rotate/rotate11.jpg"
-    , "media/rotate/rotate12.jpg";
-x=(Math.floor(Math.random()*numimages));
-randomimage=(rndimg[x]);
-document.getElementById("banner").style.backgroundImage = "url(media/rotate/rotate1.jpg"+ randomimage +")";
-}
+  var imageURLs = [
+       "media/rotate/rotate1.jpg",
+        "media/rotate/rotate2.jpg",
+        "media/rotate/rotate3.jpg"
 
+
+  ];
+  function getImageTag() {
+    var img = '<img src=\"';
+    var randomIndex = Math.floor(Math.random() * imageURLs.length);
+    img += imageURLs[randomIndex];
+    img += '\" alt=\"Some alt text\"/>';
+    return img;
+  }
 </script>
-
 
 <style type="text/css">
 
@@ -119,10 +112,11 @@ table, th, td {
   left: 10;
   font-size:16
 }
+
 </style>
 </head>
 <body>
-
+  
 <div class="vertical-text">to be in touch, or to be on <mark><em>c</em>onduit's</mark> mailing list, <a href="mailto:jadenovarino@gmail.com"><em>c</em>ontact</a> us</div>
 <blockquote><mark><em>c</em>onduit</mark> is an artist-run art space inside a communal house in a residential neighborhood called Happy Valley in Portland, Oregon, facilitated by <em>J</em>ade <em>N</em>ovarino
 <br><br>
