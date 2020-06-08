@@ -17,6 +17,30 @@
   
 </script>
 
+<script type="text/javascript">
+  var imageURLs = [
+     "media/rotate/rotate1.jpg"
+    , "media/rotate/rotate2.jpg"
+    , "media/rotate/rotate3.jpg"
+    , "media/rotate/rotate4.jpg"
+    , "media/rotate/rotate5.jpg"
+    , "media/rotate/rotate6.jpg"
+    , "media/rotate/rotate7.jpg"
+    , "media/rotate/rotate8.jpg"
+    , "media/rotate/rotate9.jpg"
+    , "media/rotate/rotate10.jpg"
+
+
+  ];
+  function getImageTag() {
+    var img = '<img src=\"';
+    var randomIndex = Math.floor(Math.random() * imageURLs.length);
+    img += imageURLs[randomIndex];
+    img += '\" alt=\"Some alt text\"/>';
+    return img;
+  }
+</script>
+
 	</head>
 
 <style type="text/css">
@@ -27,7 +51,6 @@ color:black;
 padding:35px;
 background-color:lightyellow;
 font-size:18px;
-background-image: url(media/rotate/rotate1.jpg);
 background-position: center;
 }
 
