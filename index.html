@@ -7,6 +7,8 @@
 		<link rel="shortcut icon" href="wrench.ico"/>
 		<link href="http://fonts.googleapis.com/css?family=Merienda" rel='stylesheet' type='text/css'/>
 		<title>CoNdUiT</title>
+			</head>
+
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -18,8 +20,10 @@
 </script>
 
 <script type="text/javascript">
-  var imageURLs = [
-     "media/rotate/rotate1.jpg"
+    if (document.getElementById) { window.onload = swap };
+function swap() {
+var numimages=2;
+rndimg = new Array("media/rotate/rotate1.jpg"), "media/rotate/rotate1.jpg"
     , "media/rotate/rotate2.jpg"
     , "media/rotate/rotate3.jpg"
     , "media/rotate/rotate4.jpg"
@@ -29,19 +33,15 @@
     , "media/rotate/rotate8.jpg"
     , "media/rotate/rotate9.jpg"
     , "media/rotate/rotate10.jpg"
+    , "media/rotate/rotate11.jpg"
+    , "media/rotate/rotate12.jpg";
+x=(Math.floor(Math.random()*numimages));
+randomimage=(rndimg[x]);
+document.getElementById("banner").style.backgroundImage = "url(media/rotate/rotate1.jpg"+ randomimage +")";
+}
 
-
-  ];
-  function getImageTag() {
-    var img = '<img src=\"';
-    var randomIndex = Math.floor(Math.random() * imageURLs.length);
-    img += imageURLs[randomIndex];
-    img += '\" alt=\"Some alt text\"/>';
-    return img;
-  }
 </script>
 
-	</head>
 
 <style type="text/css">
 
@@ -50,6 +50,7 @@ font-family: "Times New Roman", Times, serif;
 color:black;
 padding:35px;
 background-color:lightyellow;
+background-image: url("media/rotate/rotate1.jpg") no-repeat center center;
 font-size:18px;
 background-position: center;
 }
