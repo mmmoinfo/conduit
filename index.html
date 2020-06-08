@@ -48,6 +48,8 @@
     var img = '<img src=\"';
     var randomIndex = Math.floor(Math.random() * imageURLs.length);
     img += imageURLs[randomIndex];
+    image.width = 400px;
+
     img += '\" alt=\"Some alt text\"/>';
     return img;
   }
@@ -59,7 +61,7 @@ body {
 font-family: "Times New Roman", Times, serif;
 color:black;
 padding:35px;
-background-color:lightyellow;
+background-color:white;
 background-image: url("media/rotate/rotate1.jpg") no-repeat center center;
 font-size:18px;
 background-position: center;
